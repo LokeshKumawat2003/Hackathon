@@ -1,0 +1,116 @@
+/* Modal Background */
+.interested-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal Container */
+.interested-modal-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.interested-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Close Button */
+.interested-close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+.interested-close-btn:hover {
+    color: black;
+}
+
+/* Tag Selection Area */
+.interested-tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Selected Tags */
+.interested-tag {
+    background: #ddd;
+    padding: 6px 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 6px;
+}
+
+.interested-tag button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: red;
+}
+
+.interested-tag button:hover {
+    color: darkred;
+}
+
+/* Suggested Tags */
+.interested-suggested-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.interested-suggested-btn {
+    background: #e0e0e0;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.interested-suggested-btn:hover {
+    background: #d0d0d0;
+}
+
+/* Save Button */
+.interested-save-btn {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.interested-save-btn:hover {
+    background: #333;
+}

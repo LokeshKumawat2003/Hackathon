@@ -1,0 +1,74 @@
+.edit-bio-head-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.edit-bio-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-bio-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-bio-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 14px;
+}
+
+.edit-bio-button-group {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-bio-cancel-btn,
+.edit-bio-save-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.edit-bio-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.edit-bio-cancel-btn {
+  background: #ccc;
+  color: black;
+}
+
+.edit-bio-save-btn {
+  background: black;
+  color: white;
+}
+
+.edit-bio-close {
+  cursor: pointer;
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+}

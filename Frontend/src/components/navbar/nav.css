@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212529;
+  margin-right: 24px;
+  font-size: 22px;
+}
+
+.search-container {
+  position: relative;
+  flex: 1;
+  max-width: 363px;
+  margin: 0 24px;
+  right: 125px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 40px 8px 45px;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #495057;
+  height: 39px;
+  background-color: #dddddd80;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #adb5bd;
+}
+
+.search-button {
+  position: absolute;
+  top: 56%;
+  left: 7px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #5f6368;
+  cursor: pointer;
+  padding: 4px;
+  font-weight: 500;
+  font-family: Satoshi;
+}
+
+.nav-icon span {
+  font-size: 13px;
+}
+
+.nav-icon:hover {
+  color: #212529;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  padding: 3px 9px;
+  border-radius: 23px;
+  gap: 8px;
+  cursor: pointer;
+  flex-direction: row;
+}
+
+.profile-image img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .nav-icon span {
+    display: none;
+  }
+
+  .search-container {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .search-container {
+    margin: 0 12px;
+  }
+
+  .nav-icons {
+    gap: 12px;
+  }
+}
